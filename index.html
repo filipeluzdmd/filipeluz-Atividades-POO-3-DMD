@@ -2,111 +2,72 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 01</title>
-    <style>
-        /* Reset inicial */
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-
-        /* Estilização do cabeçalho */
-        header {
-            background-color: #004d00; /* Verde escuro */
-            color: white;
-            text-align: center;
-            padding-top: 95px;
-            padding-bottom: 95px;
-        }
-
-        /* Estilização das seções */
-        section {
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        h2 {
-            margin-top: 25px;
-            border-bottom: 2px solid gray;
-        }
-
-        p {
-            margin-top: 15px;
-            text-align: justify;
-        }
-
-        /* Estilização da figura */
-        figure {
-            width: 50%;
-            margin: 0 auto;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            text-align: center;
-        }
-
-        figure img {
-            width: 100%;
-        }
-
-        figcaption {
-            font-size: 12px;
-        }
-
-        /* Estilização do rodapé */
-        footer {
-            background-color: #004d00;
-            color: white;
-            text-align: center;
-        }
-
-        footer div {
-            width: 80%;
-            margin: 0 auto;
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
-    </style>
+    <title>Exercício 03 - Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <img src="https://via.placeholder.com/46" alt="Logo" id="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/artigos.html">Artigos</a></li>
+            <li><a href="pages/galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <!-- CABEÇALHO -->
     <header>
-        <h1>My First Web Page</h1>
+        <div class="container-header">
+            <h1>Um pouco de Flexbox</h1>
+        </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
-        <section>
-            <h2><em>HTML</em></h2>
-            <p>HTML is the standard markup language for creating web pages.</p>
-            <p>It provides the fundamental structure for content on the internet, allowing browsers to render text, images, and other multimedia elements efficiently.</p>
-            <p>By using semantic tags, we improve accessibility and search engine optimization for our digital projects.</p>
-            <p>Mastering these tags is the first step toward becoming a proficient web developer.</p>
-            
+        <!-- Seção JavaScript -->
+        <section class="section-content">
             <figure>
-                <img src="https://picsum.photos/800/600" alt="figura">
-                <figcaption>Exercício de HTML e CSS</figcaption>
+                <img src="https://picsum.photos/400" alt="JS">
             </figure>
+            <div class="text-content">
+                <h2>JavaScript</h2>
+                <p>O JavaScript é a linguagem de programação mais popular do mundo, essencial para criar interatividade em páginas web modernas.</p>
+                <p>Com ele, você pode manipular elementos do HTML, controlar o comportamento do navegador e criar aplicações complexas que rodam diretamente no cliente.</p>
+            </div>
         </section>
 
-        <section>
-            <h2><em>CSS</em></h2>
-            <p>CSS is the language used to style our HTML documents and control the visual presentation.</p>
-            <p>It allows us to manage layout, colors, and typography to create responsive and aesthetically pleasing user interfaces.</p>
-            <p>With modern techniques like Flexbox and Grid, we can ensure that our content looks great on any screen size.</p>
-            
+        <!-- Seção PWA -->
+        <section class="section-content">
             <figure>
-                <img src="https://picsum.photos/800/601" alt="figura">
-                <figcaption>Exercício de HTML e CSS</figcaption>
+                <img src="https://picsum.photos/401" alt="PWA">
             </figure>
+            <div class="text-content">
+                <h2>PWA</h2>
+                <p>Progressive Web Apps (PWA) são aplicações que utilizam tecnologias da web para oferecer uma experiência muito próxima a de um aplicativo nativo.</p>
+                <p>Eles permitem o funcionamento offline, o recebimento de notificações push e podem ser instalados na tela inicial do celular sem passar pela loja de aplicativos.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Galeria Cinza -->
+        <section class="section-img-gallery">
+            <h2>Imagens em Destaque</h2>
+            <div class="gallery-container">
+                <img src="https://picsum.photos/350/400?1" alt="Img 1">
+                <img src="https://picsum.photos/350/400?2" alt="Img 2">
+                <img src="https://picsum.photos/350/400?3" alt="Img 3">
+            </div>
         </section>
     </main>
 
+    <!-- RODAPÉ -->
     <footer>
-        <div>
-            <ul>
-                <li>YouTube</li>
-                <li>GitHub</li>
-            </ul>
+        <div class="footer-links">
+            <p>YouTube</p>
+            <p>GitHub</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
         </div>
     </footer>
 
